@@ -11,6 +11,7 @@ parts:
         desc: "Dari pasar beras Osaka sampai chart di HP."
       - n: 3
         title: "Chart: Jenis dan Cara Membacanya"
+        slug: "bab-03-chart-jenis-dan-cara-membacanya"
         desc: "Line, bar, dan candlestick — dan kenapa timeframe mengubah cerita."
       - n: 4
         title: "Skala Harga: Arithmetic vs Logarithmic"
