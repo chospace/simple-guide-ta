@@ -31,7 +31,3 @@ Hari ini chart ada di HP semua orang, datanya real-time, indikatornya ratusan. A
 Yang berubah alatnya. Manusianya tidak.
 
 Bab berikutnya kita mulai dari alat yang paling dasar: chart itu sendiri.
-
----
-
-← [Bab 1 — Apa Itu Technical Analysis](/simple-guide-ta/bab/bab-01-apa-itu-technical-analysis/) · [Daftar Isi](/simple-guide-ta/bab/)

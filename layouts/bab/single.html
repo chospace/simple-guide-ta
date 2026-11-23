@@ -1,0 +1,41 @@
+{{ define "main" }}
+    {{ $total := 0 }}
+    {{ range .Site.Data.toc.parts }}{{ $total = add $total (len .chapters) }}{{ end }}
+    {{ $prev := .NextInSection }}
+    {{ $next := .PrevInSection }}
+    <div class="content">
+        <main class="post">
+            <article>
+                <p class="sgta-chapmeta">Bab {{ .Weight }} dari {{ $total }} · <a href="{{ "bab/" | relURL }}">Daftar Isi</a></p>
+                <h2 class="post-title">{{ .Title | markdownify }}</h2>
+                <div class="post-content">
+                    {{ .Content }}
+                </div>
+            </article>
+
+            <hr />
+
+            <nav class="sgta-chapnav">
+                {{ if $prev }}
+                    <a class="sgta-prev" href="{{ $prev.RelPermalink }}">← {{ $prev.Title }}</a>
+                {{ else }}
+                    <span></span>
+                {{ end }}
+                <a class="sgta-toc" href="{{ "bab/" | relURL }}">Daftar Isi</a>
+                {{ if $next }}
+                    <a class="sgta-next" href="{{ $next.RelPermalink }}">{{ $next.Title }} →</a>
+                {{ else }}
+                    <span></span>
+                {{ end }}
+            </nav>
+        </main>
+    </div>
+
+    <style>
+        .sgta-chapmeta { opacity: .65; font-size: .92em; margin-bottom: .4em; }
+        .sgta-chapnav { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+        .sgta-chapnav a { text-decoration: none !important; font-weight: 600; }
+        .sgta-chapnav .sgta-toc { opacity: .7; font-weight: 400; }
+        .sgta-next { margin-left: auto; text-align: right; }
+    </style>
+{{ end }}

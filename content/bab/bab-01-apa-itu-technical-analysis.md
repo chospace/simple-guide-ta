@@ -39,7 +39,3 @@ Technical analysis bukan ramalan. Dia tidak memberi tahu masa depan — dia memb
 Itu justru bagian terpentingnya. Analisa yang baik bukan yang selalu benar, tapi yang sejak awal tahu: kalau harga sampai di titik ini, saya salah, dan saya keluar. Sisanya — setup, indikator, pola — cuma alat buat membaca kecenderungan itu sebaik mungkin.
 
 Bab berikutnya: dari mana cara baca ini datang, dan kenapa dia bisa bertahan lebih dari seratus tahun.
-
----
-
-← [Daftar Isi](/simple-guide-ta/bab/) · Lanjut: [Bab 2 — Sejarah Singkat](/simple-guide-ta/bab/bab-02-sejarah-singkat/)
