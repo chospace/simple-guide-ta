@@ -1,0 +1,62 @@
+{{ define "main" }}
+    {{ $sec := . }}
+    <main class="post">
+        <h1 class="post-title">{{ .Title }}</h1>
+
+        {{ if .Content }}
+            <div class="post-content">{{ .Content }}</div>
+        {{ end }}
+
+        {{ $total := 0 }}{{ $done := 0 }}
+        {{ range .Site.Data.toc.parts }}
+            {{ range .chapters }}
+                {{ $total = add $total 1 }}
+                {{ if $sec.Site.GetPage (printf "/bab/%s" .slug) }}{{ $done = add $done 1 }}{{ end }}
+            {{ end }}
+        {{ end }}
+
+        <p class="sgta-progress">{{ $done }} dari {{ $total }} bab sudah terbit · <a href="{{ "bab/bab-01-apa-itu-technical-analysis/" | relURL }}">Mulai dari Bab 1 →</a></p>
+
+        {{ range .Site.Data.toc.parts }}
+            <h2 class="sgta-part">{{ .name }}</h2>
+            <div class="sgta-list">
+                {{ range .chapters }}
+                    {{ $page := $sec.Site.GetPage (printf "/bab/%s" .slug) }}
+                    {{ if $page }}
+                        <a class="sgta-row" href="{{ $page.RelPermalink }}">
+                            <span class="sgta-num">{{ .n }}</span>
+                            <span class="sgta-main">
+                                <span class="sgta-title">{{ .title }}</span>
+                                <span class="sgta-desc">{{ .desc }}</span>
+                            </span>
+                        </a>
+                    {{ else }}
+                        <div class="sgta-row sgta-soon">
+                            <span class="sgta-num">{{ .n }}</span>
+                            <span class="sgta-main">
+                                <span class="sgta-title">{{ .title }}</span>
+                                <span class="sgta-desc">{{ .desc }}</span>
+                            </span>
+                            <span class="sgta-tag">menyusul</span>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+    </main>
+
+    <style>
+        .sgta-progress { opacity: .75; margin: 1.2em 0 .2em; }
+        .sgta-part { margin-top: 1.5em; }
+        .sgta-list { border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+        .sgta-row { display: flex; gap: 14px; align-items: baseline; padding: 10px 8px; border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+        a.sgta-row { text-decoration: none !important; }
+        a.sgta-row:hover { background: color-mix(in srgb, currentColor 6%, transparent); }
+        .sgta-num { min-width: 2ch; text-align: right; opacity: .5; font-variant-numeric: tabular-nums; }
+        .sgta-main { display: flex; flex-direction: column; }
+        .sgta-title { font-weight: 600; }
+        .sgta-desc { opacity: .65; font-size: .92em; }
+        .sgta-soon { opacity: .55; }
+        .sgta-tag { margin-left: auto; font-size: .78em; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+    </style>
+{{ end }}

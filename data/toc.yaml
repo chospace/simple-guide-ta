@@ -1,0 +1,76 @@
+parts:
+  - name: "Bagian 1 — Fondasi"
+    chapters:
+      - n: 1
+        title: "Apa Itu Technical Analysis"
+        slug: "bab-01-apa-itu-technical-analysis"
+        desc: "Tiga premis yang jadi fondasi semua bab sesudahnya."
+      - n: 2
+        title: "Sejarah Singkat Technical Analysis"
+        slug: "bab-02-sejarah-singkat"
+        desc: "Dari pasar beras Osaka sampai chart di HP."
+      - n: 3
+        title: "Chart: Jenis dan Cara Membacanya"
+        desc: "Line, bar, dan candlestick — dan kenapa timeframe mengubah cerita."
+      - n: 4
+        title: "Skala Harga: Arithmetic vs Logarithmic"
+        desc: "Skala yang salah bikin level yang salah."
+      - n: 5
+        title: "Trend: Satu-Satunya Arah yang Penting"
+        desc: "Naik, turun, menyamping — cara mengenalinya tanpa menebak."
+  - name: "Bagian 2 — Level dan Pola"
+    chapters:
+      - n: 6
+        title: "Support dan Resistance"
+        desc: "Dua level yang paling sering menentukan masuk dan keluar."
+      - n: 7
+        title: "Trendline dan Channel"
+        desc: "Garis miring yang menghubungkan cerita harga."
+      - n: 8
+        title: "Pola Chart Klasik"
+        desc: "Segitiga, kepala-bahu, bendera: pola yang dibakukan sejak 1948."
+      - n: 9
+        title: "Gaps"
+        desc: "Lompatan harga, dan apa yang biasanya terjadi sesudahnya."
+      - n: 10
+        title: "Candlestick"
+        desc: "Satu batang lilin, empat data, banyak cerita."
+  - name: "Bagian 3 — Indikator"
+    chapters:
+      - n: 11
+        title: "Indikator: Buat Apa Sebenarnya"
+        desc: "Indikator itu turunan harga — kapan membantu, kapan cuma jadi bising."
+      - n: 12
+        title: "Moving Average"
+        desc: "Garis rata-rata yang merapikan arah."
+      - n: 13
+        title: "Oscillator: RSI, MACD, dan Stochastic"
+        desc: "Mengukur kecepatan dan kejenuhan harga."
+      - n: 14
+        title: "Volume"
+        desc: "Seberapa banyak yang berpindah tangan di balik gerakan."
+  - name: "Bagian 4 — Wave dan Fibonacci"
+    chapters:
+      - n: 15
+        title: "Elliott Wave"
+        desc: "Pasar bergerak dalam gelombang: lima maju, tiga koreksi."
+      - n: 16
+        title: "Fibonacci Retracement"
+        desc: "Mengukur seberapa dalam koreksi biasanya berhenti."
+      - n: 17
+        title: "Fibonacci Extension dan Target Harga"
+        desc: "Memproyeksikan target setelah koreksi selesai."
+  - name: "Bagian 5 — Praktik"
+    chapters:
+      - n: 18
+        title: "Menyusun Rencana Trading"
+        desc: "Entry, salahnya di mana, keluarnya di mana — sebelum posisi dibuka."
+      - n: 19
+        title: "Risiko dan Ukuran Posisi"
+        desc: "Yang dijaga bukan profitnya, tapi asetnya."
+      - n: 20
+        title: "Psikologi dan Jurnal"
+        desc: "Musuh terbesarnya bukan pasar — dan cermin buat melihatnya."
+      - n: 21
+        title: "So What? Menggabungkan Semuanya"
+        desc: "Semua alat di buku ini dipakai bareng dalam satu bacaan utuh."
