@@ -1,0 +1,32 @@
+baseURL: "https://chospace.github.io/simple-guide-ta/"
+title: "Simple Guide TA"
+languageCode: "id-ID"
+theme: "hello-friend-ng"
+
+enableRobotsTXT: true
+enableEmoji: true
+
+params:
+  description: "Panduan analisa teknikal yang sederhana — satu bab pendek tiap topik, ditulis pelan-pelan."
+  homeSubtitle: "analisa teknikal, pelan-pelan"
+  enableThemeToggle: true
+  dateform: "Jan 2, 2006"
+  author:
+    name: "Cho"
+  Logo:
+    logoText: "Simple Guide TA"
+  footer:
+    bottomText:
+      - "© 2026 Cho"
+      - "<a href=\"https://chospace.github.io/\">← chospace.github.io</a>"
+
+menu:
+  main:
+    - identifier: "bab"
+      name: "Daftar Isi"
+      url: "bab/"
+      weight: 10
+    - identifier: "blog"
+      name: "Blog"
+      url: "https://chospace.github.io/"
+      weight: 20
